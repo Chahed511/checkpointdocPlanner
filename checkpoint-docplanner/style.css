@@ -183,7 +183,7 @@ font-weight: 200;
    
 }
 
-.grid{
+.carrbleau{
 
     margin: auto;
     display: flex;
@@ -191,13 +191,15 @@ font-weight: 200;
 justify-content: space-between;
 margin-top:50px;
 border-radius: 10px;
-
+font-family: Arial,sans-serif;
   
 }
 
 
 
-.patient-grid, .doctor-grid, .clinc-grid{
+.patient-carrbleau, .doctor-carrbleau, .clinc-carrbleau{
+    
+    
 width:250px;
 height:300px;
 border-radius: 10px;
@@ -205,11 +207,11 @@ padding: 40px 20px 20px 40px;
 position: relative;
 overflow: hidden;
 z-index: -5;
-
+color: white;
 }
-.patient-grid{background: #00CCB1}
-.doctor-grid{background: #3D83DF}
-.clinc-grid{background: #1b2734}
+.patient-carrbleau{background: #00CCB1}
+.doctor-carrbleau{background: #3D83DF}
+.clinc-carrbleau{background: #1b2734}
 
 
 
@@ -232,12 +234,28 @@ z-index: -5;
     line-height: 1.5em;
    
 }
-.row{
-height:260px;
-width:100%;
-position: relative;
-margin-top:40px;
 
+.row{
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    border-radius: 4px;
+    text-decoration: none!important;
+    transition: all .2s ease 0s;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    outline: 0;
+    background: none;
+    border: 0;
+    color: #fff;
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: .04em;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 35px;
 
 }
 .row-img{
@@ -247,16 +265,36 @@ height:260px;
 right:-130px;
 
 }
+.row .coutry-list{
+
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0 2em 0 0;
+    -webkit-appearance: none;
+    outline: 0;
+    text-transform: none;
+    text-decoration: underline;
+    cursor: pointer;
+    height: 40px;
+    color: white;
+position:inherit;
+cursor: pointer;
+
+
+}
 .coutry-list{
-    width:200px;
-    height:40px;
-    border:0;
+    width: 200px;
+    height: 40px;
+    border: 0;
     border-radius: 5px;
     font-family: arial;
     font-size: 12px;
     text-transform: uppercase;
-    padding-left:20px;
-    font-weight: bold
+    padding-left: 20px;
+    font-weight: bold;
+    background: transparent;
 
 }
 
@@ -326,35 +364,26 @@ align-items: center;
 }
 .acheivment-section{
     width:100%;
-   
-    background: #DFF8F6;
+
+    background:url(img/logo.png) no-repeat,#DFF8F6;
     display: flex;
     justify-content: center;
     height:570px;
    
+background-position: 80px 250px;
+overflow: hidden;
+
 }
 
-.left-grid{
+.left-carrbleau{
 width: 420px;
 padding-top:50px;
 
-
 }
 
 
-.left-grid::before{
-   
-    position: relative;
-    right: 67%;
-    top: 45%;
-    background: url(img/logo.png) no-repeat;
-    width: 456px;
-    height: 435px;
-    pointer-events: none;
-    
-  
-}
-.right-grid{
+
+.right-carrbleau{
 display: flex;
 width:550px;
 flex-flow: row  wrap;
@@ -364,7 +393,7 @@ align-items: center
 
 
 }
-.offset-grid{margin-top:30px}
+.offset-carrbleau{margin-top:30px}
 
 
 .acheivement-item{
@@ -511,7 +540,7 @@ font-weight: bold
     transition: all .2s ease 0s;
 }
 
-body > footer{
+footer{
 
 
     font-size: 16px;
@@ -527,7 +556,7 @@ text-align: center;
 padding: 1em 0;
 }
 
-body > footer > div{
+footer  div{
 
 
     line-height: 1.3;
@@ -549,8 +578,7 @@ body > footer > div{
 
 }
 
-
-body > footer > div > p{
+footer div  p{
 
     line-height: 1.3;
     font-weight: 400;
@@ -565,8 +593,7 @@ body > footer > div > p{
 
 
 }
-
-body > footer > div > p:nth-child(1) > a{
+footer  div  p  a{
 
 
     line-height: 1.3;
@@ -585,3 +612,27 @@ body > footer > div > p:nth-child(1) > a{
 
 }
 
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.domain-switcher{
+    -webkit-font-smoothing: antialiased;
+box-sizing: inherit;
+color: inherit;
+font: inherit;
+margin: 0;
+height: 40px;
+width: 100%;
+background: transparent;
+border: 0;
+border-radius: 0;
+padding: 0 2em 0 0;
+outline: 0;
+text-transform: none;
+text-decoration: underline;
+cursor: pointer;
+}
